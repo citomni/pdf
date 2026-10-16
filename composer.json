@@ -1,0 +1,70 @@
+{
+    "name": "citomni/pdf",
+    "description": "PDF toolkit for CitOmni applications, providing PDF generation, inspection, content extraction, manipulation, and document processing.",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "citomni",
+        "php",
+        "pdf",
+        "pdf-generation",
+        "pdf-processing",
+        "pdf-manipulation",
+        "pdf-parser",
+        "pdf-extraction",
+        "pdf-merge",
+        "pdf-split",
+        "pdf-metadata",
+        "document-processing",
+        "document-generation",
+        "pdf-toolkit",
+        "composer",
+        "php-library"
+    ],
+    "homepage": "https://github.com/citomni/pdf",
+    "support": {
+        "email": "lars@grove-mortensen.dk",
+        "issues": "https://github.com/citomni/pdf/issues",
+        "source": "https://github.com/citomni/pdf",
+        "docs": "https://github.com/citomni/pdf/blob/main/README.md",
+        "security": "https://github.com/citomni/.github/blob/main/SECURITY.md"
+    },
+    "require": {
+        "php": "^8.5",
+        "citomni/kernel": "^1.0.2.8"
+    },
+    "suggest": {
+        "citomni/cli": "Runs pdf:doctor, the capability check for deploys."
+    },
+    "autoload": {
+        "psr-4": {
+            "CitOmni\\Pdf\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "CitOmni\\Pdf\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "@php tests/run.php"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "extra": {
+        "branch-alias": {
+            "dev-main": "1.0.x-dev"
+        }
+    },
+    "authors": [
+        {
+            "name": "Lars Grove Mortensen",
+            "email": "lars@grove-mortensen.dk",
+            "homepage": "https://www.citomni.com",
+            "role": "Developer"
+        }
+    ]
+}
